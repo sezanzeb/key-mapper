@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=KeyMapper
+Icon=io.github.sezanzeb.KeyMapper
+Exec=/app/bin/key-mapper.sh
+Terminal=false
+Categories=Settings
+Comment=GUI for device specific key mappings

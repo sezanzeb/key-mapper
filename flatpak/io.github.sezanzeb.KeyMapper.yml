@@ -1,0 +1,23 @@
+app-id: io.github.sezanzeb.KeyMapper
+runtime: org.gnome.Platform
+runtime-version: '3.38'
+sdk: org.gnome.Sdk
+command: /app/bin/key-mapper.sh
+
+finish-args:
+  - --socket=x11
+  - --socket=wayland
+  - --share=ipc
+
+modules:
+  - python3-requires.json
+  - name: key-mapper
+    buildsystem: simple
+    build-commands:
+      - install -D data/key-mapper.svg /app/share/icons/hicolor/scalable/apps/io.github.sezanzeb.KeyMapper.svg
+      - install -D flatpak/io.github.sezanzeb.KeyMapper.desktop -t /app/share/applications/
+      - install -D flatpak/key-mapper.sh -t /app/bin/
+      - python3 setup.py install --root=/app
+    sources:
+      - type: dir
+        path: ../.

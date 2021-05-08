@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.sezanzeb.KeyMapper</id>
+
+  <name>KeyMapper</name>
+  <summary>Change buttons mapping on your keyboard or any input device</summary>
+  <summary xml:lang="ru">Приложение для переназначения клавиш на клавиатуре или другом устройстве ввода</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+
+  <provides>
+    <binary>key-mapper-control</binary>
+    <binary>key-mapper-gtk</binary>
+    <binary>key-mapper-gtk-pkexec</binary>
+    <binary>key-mapper-service</binary>
+  </provides>
+
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <control>gamepad</control>
+  </recommends>
+
+  <description>
+    <p>
+      An easy to use tool to change the mapping of your input device buttons. Supports mice, keyboards, gamepads.
+    </p>
+    <p xml:lang="ru">
+      Простое в использовании приложение для переназначения клавиш на устройстве ввода. Поддерживает клавиатурные мыши, клавиатуры, игровые джойстики. 
+    </p>
+    <p>
+      Allows you to remap combined buttons and create programmable macroses.
+    </p>
+    <p xml:lang="ru">
+      Позволяет переназначать комбинации клавиш и создавать программируемые макросы.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.sezanzeb.KeyMapper.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/sezanzeb/key-mapper/main/readme/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/sezanzeb/key-mapper/main/readme/screenshot_2.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://github.com/sezanzeb/key-mapper</url>
+  <url type="contact">proxima@hip70890b.de</url>
+  <update_contact>proxima@hip70890b.de</update_contact>
+
+</component>
